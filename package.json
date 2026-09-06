@@ -1,0 +1,18 @@
+{
+  "name": "patchpilot",
+  "version": "0.1.0",
+  "description": "Local MVP scaffold: detects breaking third-party API contract changes and auto-generates the code patch, updated test, and plain-English explanation.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "patchpilot": "./bin/patchpilot.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "demo:breaking": "node bin/patchpilot.js run --vendor stripe",
+    "demo:clean": "node bin/patchpilot.js run --vendor stripe-clean"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
